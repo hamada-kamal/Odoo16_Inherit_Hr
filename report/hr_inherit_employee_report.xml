@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+       <template id="hr_update_emp_report" inherit_id="hr.print_employee_badge">
+           <xpath expr="//td[@valign='center']" position="before">
+               code: <span t-esc="employee.code"/>
+           </xpath>
+       </template> 
+    
+    </data>
+</odoo>
